@@ -1,0 +1,267 @@
+/*Index.html css*/
+* {
+    box-sizing: border-box;
+}
+#customNav {
+    background-color: black;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+.nav navbar-nav {
+    background-color: black;
+    margin-bottom: 0;
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    background-color: #ddd;
+}
+.ng-scope {
+    font-family: "Avenir-Medium";
+}
+
+.panel-primary .panel-heading {
+    background-image: linear-gradient(to bottom,#335566 0,#334466 100%);
+}
+
+#logo {
+    height: 4em;
+    width: 4em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.5em;
+    }
+
+.pushdown {
+    margin-top: 56px;
+}
+
+#welcomebar {
+    margin: 0;
+    padding-top: 80px;
+}
+
+.navbar-nav {
+    padding-top: 4.5px;
+    padding-left: 15px;
+}
+
+
+.container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+     margin-right: 0; 
+     margin-left: 0; 
+}
+toggle:hover {
+    background-color: #000;
+}
+.navbar-default .navbar-toggle {
+    border-color: #000;
+    margin-top: 11px;
+    margin-right: 19px;
+}
+
+toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #000;
+ 
+}
+.navbar-toggle {
+    margin-right: 21px;
+}
+@font-face {
+    font-family: Avenir-Medium;
+    src: url(/views/assets/fonts/Avenir-Medium.woff);
+}
+
+.list-group {
+    font-family: "Avenir-Medium";
+    box-shadow: 0 0 0 0
+}
+
+.center {
+    text-align: center;
+}
+.welcome {
+    background: url(views/assets/home-image.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+/*Apparel.html css*/
+.apparel-div {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.panel-primary:hover {
+    -webkit-box-shadow: 1px 1px 1px 1px #334466;
+    box-shadow: 4px 4px 4px 4px #334466;
+    padding: 0;
+    margin: 0 auto;
+}
+.panel-primary {
+    margin: 0 auto;
+    max-width: 300px
+}
+.product-info {
+    height: 520px;
+    width: 100%;
+}
+.product-view {
+    height: 520px;
+    width: 100%;
+}
+.description-p {
+    padding-top: 80px;
+}
+.left {
+    text-align: left;
+    margin-left: 4px;
+}
+.buy-btn {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #334466;
+    border-radius: 2px;
+    color: #334466;
+    width: 10px;
+    text-align: center;
+    background-color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/*Accessories.html css*/
+.accessories-div {
+    height: 10em;
+    width: 10em;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Purchase.html css*/
+/*[class*='col-'] {
+  float: left;
+}*/
+
+.col-image {
+    width: 50%;
+    float: left
+}
+.col-description {
+    width: 50%;
+    margin: 200px;
+}
+.col-payment {
+    float: left;
+}
+.purchase-image {
+    height: 100vh;
+    width: 50%;
+    background-size: contain;
+   
+    margin-top: 5px;
+    background-repeat: no-repeat;
+}
+.purchase-headings{
+    padding-top: 200px;
+}
+.payment-div {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-position: center;
+    margin-left: 25%;
+}
+/*.purchase-divs {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #334466;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}*/
+#purchase {
+    margin-top: 56px;
+}
+.payment-inputs {
+    margin: 5px;
+    height: 50px;
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+
+/*Contact_us.html css*/
+.contact-div {
+    width: 90%;
+}
+
+#input-email {
+    height: 20em;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+#email-input {
+    margin-top: 70px;
+}
+
+#input {
+  width: 70%;
+}
+
+#contact-email {
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+#email-button {
+    border-radius: 4px;
+    margin-top: 10px;
+    background-image: linear-gradient(to bottom,#335566 0,#334466 100%)
+}
+
+#contact-subject {
+    border-radius: 4px;
+}
+
+#button {
+    text-align: center;
+}
+
+/*collections pages styling*/
+#product-container {
+    margin-top: 74px;
+    margin-left: 18px;
+}
+
+#search {
+    width: 25px;
+    height: 25px;
+    margin-left: 140px;
+}
+
+#desc-logo {
+    height: 100px;
+    width: 100px;
+    margin-top: 100px;
+}
+
+.panel-primary {
+    background-color: #777;
+    border-color: #335566;
+}
+
+.panel-primary>.panel-heading {
+    border-color: #335566;
+    color: #ffc61a;
+}
+
+html {
+    background-color: #ddd;
+}

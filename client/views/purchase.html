@@ -1,0 +1,29 @@
+<div class="grid">
+
+    <div class="purchase-image col-image" style="background-image: url(/views/assets/{{ product.imageurl }})"></div>
+    <div class="col-description">
+        <h3>Name</h3>
+        <div>{{ product.title }}</div>
+        <h3>Type</h3>
+        <div>{{ product.description }}</div>
+        <h3>Quantity</h3>
+        <select name="Quantity" id="quantity" ng-model="selectedQuantity" ng-change="changePrice()">
+                        <option value="1">1</option>
+                        <option value="{{number}}" ng-repeat="number in numbers">{{number}}</option>
+                    </select>
+        <h3>Price</h3>
+        <div>${{ productPrice }}</div>
+    </div>
+<div class="paymentcontainer col-payment">
+    <h3>Payment</h3>
+    <input type="text" class="payment-inputs" ng-model="clientName" placeholder="name"><br>
+    <input type="email" class="payment-inputs" ng-model="clientEmail" placeholder="email"><br>
+    <input type="number" class="payment-inputs" ng-model="clientZipCode" placeholder="zip code"><br>
+    <input type="text" class="payment-inputs" ng-model="cardNumber" placeholder="Card Number"><br>
+    <input type="number" class="payment-inputs" ng-model="cvc" placeholder="cvc"><br>
+    <input type="number" class="payment-inputs" ng-model="expMonth" placeholder="exp month"><br>
+    <input type="number" class="payment-inputs" ng-model="expYear" placeholder="exp year"><br>
+    <button ng-click="confirmPurchase()">Confirm</button>
+</div>
+
+</div>

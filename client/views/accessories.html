@@ -1,0 +1,27 @@
+<div class="container-fluid center" id="product-container">
+    <div class="row">
+        <div class="list-group col-md-4 col-sm-6 col-xs-12 col-lg-3 accessories-shadow"  ng-repeat="accessories in accessories">
+            <div class="panel panel-primary product-view" ng-show="!accessories.displayInfo" ng-click="toggleDivs(accessories)">
+                <div class="panel panel-heading">
+                    <h1>{{ accessories.title }}</h1>
+                </div>
+                <div class="row">
+                    <div class="panel-body"><img src="/views/assets/{{ accessories.imageurl }}" alt="accessories" class="img-responsive" style="width:100%"></div>
+                </div>
+                <h3>{{ accessories.description }}</h3>
+                <h4>{{ accessories.price | currency }}</h4>
+                <a class="buy-btn" href="purchase/{{ accessories.id }}">Buy</a>
+                <img src='/views/assets/search.svg' id="search">
+            </div>
+            <div class="panel panel-primary product-info" ng-show="accessories.displayInfo" ng-click="toggleDivs(accessories)">
+                <img src="/views/assets/logo.svg" alt="" id="desc-logo">
+                <p class="description-p left">This is an ultra useful {{ accessories.title | lowercase }} from Depot/U. 
+                    It comes in the perfect shade of {{ accessories.description | lowercase }}.  
+                    We use only the highest quality textiles and inks here at Depot/U.  
+                    Everything is earth-friendly and renewably resourced!  
+                    Made in America.</p>
+                <p class="left">And it's so incredibly affordable at only {{ accessories.price | currency : symbol }}!</p>
+            </div>
+        </div>
+    </div>
+</div>

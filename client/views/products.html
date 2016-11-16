@@ -1,0 +1,9 @@
+<div class="container" id="product-container">
+    <div class="list-group"  ng-repeat="product in products">
+        <h1>{{ product.title }}</h1>
+        <h2>{{ product.description }}</h2>
+        <h4>{{ product.price | currency }}</h4>
+        <img src="assets/{{ product.imageurl }}" alt="text">
+        <a href="products/{{ product.id }}">Buy</a>
+    </div>
+</div>

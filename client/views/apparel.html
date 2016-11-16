@@ -1,0 +1,27 @@
+<div class="container-fluid center pushdown" id="product-container">
+    <div class="row">
+        <div class="list-group col-xs-12 col-sm-6 col-md-4 col-lg-3 apparel-shadow" ng-repeat="apparel in apparel">
+            <div class="panel panel-primary product-view" ng-show="!apparel.displayInfo" ng-click="toggleDivs(apparel)">
+                <div class="panel panel-heading">
+                    <h1>{{ apparel.title }}</h1>
+                </div>
+                <div class="row">
+                    <div class="panel-body"><img src="/views/assets/{{ apparel.imageurl }}" alt="apparel" class="img-responsive" style="width:100%"></div>
+                </div>
+                <h3>{{ apparel.description }}</h3>
+                <h4>{{ apparel.price | currency }}</h4>
+                <a class="buy-btn" href="purchase/{{ apparel.id }}">Buy</a>
+                <img src='/views/assets/search.svg' ng-click="search()" id="search">
+            </div>
+            <div class="panel panel-primary product-info" ng-show="apparel.displayInfo" ng-click="toggleDivs(apparel)">
+                <img src="/views/assets/logo.svg" alt="" id="desc-logo">
+                <p class="description-p left">This incredibly soft {{ apparel.title | lowercase }} from Depot/U is made of the finest American cotton. 
+                    It comes in the perfect shade of {{ apparel.description | lowercase }} design.  
+                    We use only the highest quality earth-friendly inks and textiles here at Depot/U.  
+                    Enjoy sporting our cool Edison lightbulb logo everywhere you go!  
+                    It's appropriate for any occasion, day or night!</p>
+                <p class="left">And you can have it for the amazingly low price of only {{ apparel.price | currency : symbol }}! Just click "Buy"!</p>
+            </div>
+        </div>
+    </div>
+</div>
